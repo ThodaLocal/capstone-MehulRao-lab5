@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="UrbanNest Realty — verified homes for sale and rent in Gurugram. Apartments, villas and independent houses with transparent pricing.">
+<title>UrbanNest Realty — Homes for Sale & Rent in Gurugram</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="#top" aria-label="UrbanNest Realty home">
+      <span class="logo-mark">UN</span>
+      <span class="logo-text">UrbanNest <em>Realty</em></span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#properties">Properties</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#agents">Agents</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-small header-cta" href="#contact">Book a Visit</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="container hero-content">
+      <p class="hero-tag">Verified homes · Gurugram</p>
+      <h1>Find a home that<br>fits your life.</h1>
+      <p class="hero-sub">Apartments, villas and independent houses — every listing visited and verified by our team, with honest pricing and zero hidden charges.</p>
+      <form class="search-bar" action="#properties" method="get">
+        <div class="search-field">
+          <label for="s-location">Location</label>
+          <select id="s-location" name="location">
+            <option>All of Gurugram</option>
+            <option>Golf Course Road</option>
+            <option>Sohna Road</option>
+            <option>Dwarka Expressway</option>
+            <option>New Gurugram</option>
+          </select>
+        </div>
+        <div class="search-field">
+          <label for="s-type">Property type</label>
+          <select id="s-type" name="type">
+            <option>Any type</option>
+            <option>Apartment</option>
+            <option>Villa</option>
+            <option>Independent House</option>
+            <option>Penthouse</option>
+          </select>
+        </div>
+        <div class="search-field">
+          <label for="s-budget">Budget</label>
+          <select id="s-budget" name="budget">
+            <option>Any budget</option>
+            <option>Under ₹1 Cr</option>
+            <option>₹1 – 2 Cr</option>
+            <option>₹2 – 4 Cr</option>
+            <option>Above ₹4 Cr</option>
+          </select>
+        </div>
+        <button class="btn search-btn" type="submit">Search Homes</button>
+      </form>
+      <ul class="hero-stats">
+        <li><strong>850+</strong><span>Verified listings</span></li>
+        <li><strong>2,400+</strong><span>Families housed</span></li>
+        <li><strong>12 yrs</strong><span>In Gurugram</span></li>
+        <li><strong>4.9★</strong><span>Client rating</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="properties">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Featured listings</p>
+        <h2>Homes picked for you</h2>
+        <p class="section-sub">Hand-verified properties across Gurugram's best neighbourhoods. Use the filters to narrow your search.</p>
+      </div>
+
+      <div class="listing-layout">
+        <aside class="filters" aria-label="Property filters">
+          <h3>Filters</h3>
+          <fieldset>
+            <legend>Property type</legend>
+            <label><input type="checkbox" checked> Apartment</label>
+            <label><input type="checkbox" checked> Villa</label>
+            <label><input type="checkbox"> Independent House</label>
+            <label><input type="checkbox"> Penthouse</label>
+          </fieldset>
+          <fieldset>
+            <legend>Budget</legend>
+            <label><input type="radio" name="f-budget"> Under ₹1 Cr</label>
+            <label><input type="radio" name="f-budget" checked> ₹1 – 2 Cr</label>
+            <label><input type="radio" name="f-budget"> ₹2 – 4 Cr</label>
+            <label><input type="radio" name="f-budget"> Above ₹4 Cr</label>
+          </fieldset>
+          <fieldset>
+            <legend>Bedrooms</legend>
+            <div class="chip-row">
+              <button type="button" class="chip">1 BHK</button>
+              <button type="button" class="chip">2 BHK</button>
+              <button type="button" class="chip chip-active">3 BHK</button>
+              <button type="button" class="chip">4 BHK</button>
+              <button type="button" class="chip">5+ BHK</button>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Amenities</legend>
+            <label><input type="checkbox" checked> Swimming pool</label>
+            <label><input type="checkbox"> Gym & clubhouse</label>
+            <label><input type="checkbox" checked> Covered parking</label>
+            <label><input type="checkbox"> Power backup</label>
+          </fieldset>
+          <button class="btn filters-btn" type="button">Apply Filters</button>
+        </aside>
+
+        <div class="property-grid">
+          <article class="property-card">
+            <div class="card-media">
+              <img src="images/prop1.jpg" alt="Three-bedroom apartment building with a neat front garden in Sector 62, Gurugram">
+              <span class="badge badge-sale">For Sale</span>
+              <span class="price">₹1.45 Cr</span>
+            </div>
+            <div class="card-body">
+              <h3>Skyline Heights Residences</h3>
+              <p class="location">Sector 62, Golf Course Extension Road</p>
+              <ul class="specs">
+                <li>🛏 3 Beds</li>
+                <li>🛁 3 Baths</li>
+                <li>📐 1,750 sq.ft</li>
+              </ul>
+              <div class="card-foot">
+                <span class="agent-mini">Listed by Arjun Mehta</span>
+                <a class="btn btn-small" href="#contact">View Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="property-card">
+            <div class="card-media">
+              <img src="images/prop2.jpg" alt="Luxury villa with warm evening lighting and a private driveway in DLF Phase 5">
+              <span class="badge badge-sale">For Sale</span>
+              <span class="price">₹3.9 Cr</span>
+            </div>
+            <div class="card-body">
+              <h3>Palm Grove Villa</h3>
+              <p class="location">DLF Phase 5, Golf Course Road</p>
+              <ul class="specs">
+                <li>🛏 5 Beds</li>
+                <li>🛁 5 Baths</li>
+                <li>📐 4,200 sq.ft</li>
+              </ul>
+              <div class="card-foot">
+                <span class="agent-mini">Listed by Priya Sharma</span>
+                <a class="btn btn-small" href="#contact">View Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="property-card">
+            <div class="card-media">
+              <img src="images/prop3.jpg" alt="Modern villa with a swimming pool and terrace in New Gurugram">
+              <span class="badge badge-rent">For Rent</span>
+              <span class="price">₹85,000/mo</span>
+            </div>
+            <div class="card-body">
+              <h3>The Courtyard Villa</h3>
+              <p class="location">Sector 84, New Gurugram</p>
+              <ul class="specs">
+                <li>🛏 4 Beds</li>
+                <li>🛁 4 Baths</li>
+                <li>📐 3,100 sq.ft</li>
+              </ul>
+              <div class="card-foot">
+                <span class="agent-mini">Listed by Rohit Yadav</span>
+                <a class="btn btn-small" href="#contact">View Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="property-card">
+            <div class="card-media">
+              <img src="images/prop4.jpg" alt="Bright contemporary apartment tower facade on Sohna Road">
+              <span class="badge badge-sale">For Sale</span>
+              <span class="price">₹98 Lakh</span>
+            </div>
+            <div class="card-body">
+              <h3>Meridian One Apartments</h3>
+              <p class="location">Sohna Road, Sector 48</p>
+              <ul class="specs">
+                <li>🛏 2 Beds</li>
+                <li>🛁 2 Baths</li>
+                <li>📐 1,150 sq.ft</li>
+              </ul>
+              <div class="card-foot">
+                <span class="agent-mini">Listed by Arjun Mehta</span>
+                <a class="btn btn-small" href="#contact">View Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="property-card">
+            <div class="card-media">
+              <img src="images/prop5.jpg" alt="Independent house with a two-car garage and brick facade in Sector 46">
+              <span class="badge badge-sale">For Sale</span>
+              <span class="price">₹2.6 Cr</span>
+            </div>
+            <div class="card-body">
+              <h3>Maple Street Independent House</h3>
+              <p class="location">Sector 46, Near HUDA Market</p>
+              <ul class="specs">
+                <li>🛏 4 Beds</li>
+                <li>🛁 4 Baths</li>
+                <li>📐 2,850 sq.ft</li>
+              </ul>
+              <div class="card-foot">
+                <span class="agent-mini">Listed by Priya Sharma</span>
+                <a class="btn btn-small" href="#contact">View Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="property-card">
+            <div class="card-media">
+              <img src="images/prop6.jpg" alt="Penthouse living room with floor-to-ceiling windows overlooking the city">
+              <span class="badge badge-rent">For Rent</span>
+              <span class="price">₹1.5 Lakh/mo</span>
+            </div>
+            <div class="card-body">
+              <h3>Aurum Sky Penthouse</h3>
+              <p class="location">Dwarka Expressway, Sector 113</p>
+              <ul class="specs">
+                <li>🛏 4 Beds</li>
+                <li>🛁 5 Baths</li>
+                <li>📐 3,600 sq.ft</li>
+              </ul>
+              <div class="card-foot">
+                <span class="agent-mini">Listed by Rohit Yadav</span>
+                <a class="btn btn-small" href="#contact">View Details</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="why-us">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Why UrbanNest</p>
+        <h2>Buying a home, without the headache</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-icon">✓</span>
+          <h3>100% Verified Listings</h3>
+          <p>Every property is physically visited, photographed and document-checked by our team before it goes live.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">₹</span>
+          <h3>Transparent Pricing</h3>
+          <p>One honest price with a full cost breakup — registration, maintenance and charges shown upfront.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">🏦</span>
+          <h3>Home Loan Assistance</h3>
+          <p>Partner banks, pre-approved offers and paperwork support from application to disbursal.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">📄</span>
+          <h3>Legal & Registration Help</h3>
+          <p>Title verification, agreement drafting and registration — handled by our in-house legal desk.</p>
+        </article>
+      </div>
+
+      <div class="testimonials">
+        <article class="testimonial">
+          <p>"We shifted from Delhi to Sector 62 in three weeks. Every flat UrbanNest showed us matched the photos exactly — no surprises."</p>
+          <footer>— Kavita &amp; Nikhil Bansal, Skyline Heights</footer>
+        </article>
+        <article class="testimonial">
+          <p>"As a first-time buyer I had a hundred questions. Priya explained the loan and registration process patiently, step by step."</p>
+          <footer>— Sameer Khan, Meridian One</footer>
+        </article>
+        <article class="testimonial">
+          <p>"Sold our old house and bought the villa through the same team. Fair price on both sides, and the paperwork took days, not months."</p>
+          <footer>— The Chawla Family, Palm Grove Villa</footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="agents">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Meet the team</p>
+        <h2>Agents who know every sector</h2>
+        <p class="section-sub">Local experts for Golf Course Road to New Gurugram — talk to the person who actually covers your neighbourhood.</p>
+      </div>
+      <div class="agent-grid">
+        <article class="agent-card">
+          <img src="images/agent1.jpg" alt="Portrait of Arjun Mehta, senior property advisor">
+          <h3>Arjun Mehta</h3>
+          <p class="agent-role">Senior Advisor · Golf Course Road &amp; Sectors 40–62</p>
+          <p class="agent-exp">9 years · 320+ homes closed</p>
+          <div class="agent-links">
+            <a href="tel:+919876500001">Call</a>
+            <a href="mailto:arjun@urbannest.example">Email</a>
+          </div>
+        </article>
+        <article class="agent-card">
+          <img src="images/agent2.jpg" alt="Portrait of Priya Sharma, luxury homes specialist">
+          <h3>Priya Sharma</h3>
+          <p class="agent-role">Luxury Homes Specialist · DLF Phases &amp; Villas</p>
+          <p class="agent-exp">7 years · 210+ homes closed</p>
+          <div class="agent-links">
+            <a href="tel:+919876500002">Call</a>
+            <a href="mailto:priya@urbannest.example">Email</a>
+          </div>
+        </article>
+        <article class="agent-card">
+          <img src="images/agent3.jpg" alt="Portrait of Rohit Yadav, New Gurugram and rentals expert">
+          <h3>Rohit Yadav</h3>
+          <p class="agent-role">Rentals &amp; New Gurugram Expert · Sectors 76–113</p>
+          <p class="agent-exp">6 years · 450+ rentals placed</p>
+          <div class="agent-links">
+            <a href="tel:+919876500003">Call</a>
+            <a href="mailto:rohit@urbannest.example">Email</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="contact">
+    <div class="container contact-layout">
+      <div class="contact-info">
+        <p class="eyebrow">Book a site visit</p>
+        <h2>Tell us what you're looking for</h2>
+        <p>Share a few details and an agent from that neighbourhood will call you back within one working day to fix a visit.</p>
+        <ul class="contact-list">
+          <li><strong>Office:</strong> 2nd Floor, Cyber Park, Sector 62, Gurugram</li>
+          <li><strong>Phone:</strong> <a href="tel:+911244550100">0124 455 0100</a></li>
+          <li><strong>Email:</strong> <a href="mailto:hello@urbannest.example">hello@urbannest.example</a></li>
+          <li><strong>Hours:</strong> Mon–Sun, 10 AM – 7 PM</li>
+        </ul>
+      </div>
+      <form class="inquiry-form" action="#" method="post">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="f-name">Full name</label>
+            <input id="f-name" name="name" type="text" placeholder="e.g. Ananya Gupta" required>
+          </div>
+          <div class="form-field">
+            <label for="f-phone">Phone number</label>
+            <input id="f-phone" name="phone" type="tel" placeholder="e.g. 98765 43210" required>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="f-email">Email address</label>
+          <input id="f-email" name="email" type="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-field">
+          <label for="f-property">I'm interested in</label>
+          <select id="f-property" name="property" required>
+            <option value="">Select a property…</option>
+            <option>Skyline Heights Residences — Sector 62</option>
+            <option>Palm Grove Villa — DLF Phase 5</option>
+            <option>The Courtyard Villa — New Gurugram</option>
+            <option>Meridian One Apartments — Sohna Road</option>
+            <option>Maple Street Independent House — Sector 46</option>
+            <option>Aurum Sky Penthouse — Dwarka Expressway</option>
+            <option>Something else / not decided yet</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="f-message">Message</label>
+          <textarea id="f-message" name="message" rows="4" placeholder="Tell us your budget, preferred move-in date, or any questions…"></textarea>
+        </div>
+        <button class="btn form-btn" type="submit">Request a Callback</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="logo" href="#top" aria-label="UrbanNest Realty home">
+        <span class="logo-mark">UN</span>
+        <span class="logo-text">UrbanNest <em>Realty</em></span>
+      </a>
+      <p>Verified homes for sale and rent across Gurugram. Honest pricing, local experts, end-to-end support.</p>
+      <div class="socials">
+        <a href="#" aria-label="UrbanNest on Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.9.1-3.2 0-3.6 0-4.8-.1-3.3-.1-4.8-1.7-4.9-4.9-.1-1.3-.1-1.6-.1-4.8s0-3.6.1-4.8C2.4 4 4 2.4 7.2 2.3c1.2-.1 1.6-.1 4.8-.1zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.9A6.1 6.1 0 1 0 18.1 12 6.1 6.1 0 0 0 12 5.9zm0 10.1A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm7.9-10.4a1.4 1.4 0 1 1-1.4-1.4 1.4 1.4 0 0 1 1.4 1.4z"/></svg></a>
+        <a href="#" aria-label="UrbanNest on X"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.4L6.4 22H3.2l7.3-8.3L1.6 2H8l4.4 5.9L18.9 2zm-1.1 18h1.7L7.1 3.9H5.3L17.8 20z"/></svg></a>
+        <a href="#" aria-label="UrbanNest on LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1a3.8 3.8 0 0 1 3.4-1.9c3.6 0 4.3 2.4 4.3 5.5v6.3zM5.3 7.4a2.1 2.1 0 1 1 2.1-2.1 2.1 2.1 0 0 1-2.1 2.1zM7.1 20.5H3.5V9h3.6v11.5z"/></svg></a>
+        <a href="#" aria-label="UrbanNest on YouTube"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12z"/></svg></a>
+      </div>
+    </div>
+    <nav class="footer-col" aria-label="Footer">
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="#properties">All Properties</a></li>
+        <li><a href="#why-us">Why UrbanNest</a></li>
+        <li><a href="#agents">Our Agents</a></li>
+        <li><a href="#contact">Book a Visit</a></li>
+      </ul>
+    </nav>
+    <div class="footer-col">
+      <h3>Popular areas</h3>
+      <ul>
+        <li><a href="#properties">Golf Course Road</a></li>
+        <li><a href="#properties">Sohna Road</a></li>
+        <li><a href="#properties">Dwarka Expressway</a></li>
+        <li><a href="#properties">New Gurugram</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <ul>
+        <li>Cyber Park, Sector 62, Gurugram</li>
+        <li><a href="tel:+911244550100">0124 455 0100</a></li>
+        <li><a href="mailto:hello@urbannest.example">hello@urbannest.example</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 UrbanNest Realty. All rights reserved. RERA Reg. No. HRERA-GGM/2026/0000 (demo project).</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
